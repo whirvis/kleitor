@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    "cglm",
+    "egl-registry",
+    "glew",
+    "glfw3",
+    "glm",
+    "openal-soft",
+    "opengl-registry",
+    "opengl"
+  ]
+}

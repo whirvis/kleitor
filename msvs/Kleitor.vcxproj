@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\runtime\asset.c" />
+    <ClCompile Include="..\src\runtime\common.c" />
+    <ClCompile Include="..\src\engine\audio.c" />
+    <ClCompile Include="..\src\engine\engine.c" />
+    <ClCompile Include="..\src\engine\game.c" />
+    <ClCompile Include="..\src\engine\graphics.c" />
+    <ClCompile Include="..\src\engine\input.c" />
+    <ClCompile Include="..\src\engine\platform\glfw_input.c" />
+    <ClCompile Include="..\src\engine\platform\openal_audio.c" />
+    <ClCompile Include="..\src\engine\platform\opengl_graphics.c" />
+    <ClCompile Include="..\src\engine\platform\pc_engine.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\error.c" />
+    <ClCompile Include="..\src\libraries\minimp3.c" />
+    <ClCompile Include="..\src\libraries\stb_image.c" />
+    <ClCompile Include="..\src\libraries\stb_image_resize.c" />
+    <ClCompile Include="..\src\libraries\stb_truetype.c" />
+    <ClCompile Include="..\src\libraries\stb_vorbis.c" />
+    <ClCompile Include="..\src\main.c" />
+    <ClCompile Include="..\src\runtime\platform\pc_asset.c" />
+    <ClCompile Include="..\src\runtime\platform\win32_error.c" />
+    <ClCompile Include="..\src\runtime\platform\win32_thread.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6258</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\platform\win32_time.c" />
+    <ClCompile Include="..\src\runtime\runtime.c" />
+    <ClCompile Include="..\src\sonic\load_state.c" />
+    <ClCompile Include="..\src\sonic\play_state.c" />
+    <ClCompile Include="..\src\sonic\sonic_game.c" />
+    <ClCompile Include="..\src\sonic\title_state.c" />
+    <ClCompile Include="..\src\runtime\stream.c" />
+    <ClCompile Include="..\src\runtime\thread.c" />
+    <ClCompile Include="..\src\runtime\time.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\runtime\asset.h" />
+    <ClInclude Include="..\src\runtime\common.h" />
+    <ClInclude Include="..\src\engine\audio.h" />
+    <ClInclude Include="..\src\engine\engine.h" />
+    <ClInclude Include="..\src\engine\game.h" />
+    <ClInclude Include="..\src\engine\graphics.h" />
+    <ClInclude Include="..\src\engine\input.h" />
+    <ClInclude Include="..\src\engine\platform\audio.h" />
+    <ClInclude Include="..\src\engine\platform\engine.h" />
+    <ClInclude Include="..\src\engine\platform\game.h" />
+    <ClInclude Include="..\src\engine\platform\graphics.h" />
+    <ClInclude Include="..\src\engine\platform\input.h" />
+    <ClInclude Include="..\src\engine\private\audio.h" />
+    <ClInclude Include="..\src\engine\private\engine.h" />
+    <ClInclude Include="..\src\engine\private\game.h" />
+    <ClInclude Include="..\src\engine\private\graphics.h" />
+    <ClInclude Include="..\src\engine\private\input.h" />
+    <ClInclude Include="..\src\runtime\error.h" />
+    <ClInclude Include="..\src\libraries\cglm_no_io.h" />
+    <ClInclude Include="..\src\runtime\platform\asset.h" />
+    <ClInclude Include="..\src\runtime\platform\common.h" />
+    <ClInclude Include="..\src\runtime\platform\stream.h" />
+    <ClInclude Include="..\src\runtime\private\asset.h" />
+    <ClInclude Include="..\src\runtime\private\common.h" />
+    <ClInclude Include="..\src\runtime\private\stream.h" />
+    <ClInclude Include="..\src\runtime\runtime.h" />
+    <ClInclude Include="..\src\sonic\sonic_game.h" />
+    <ClInclude Include="..\src\runtime\stream.h" />
+    <ClInclude Include="..\src\runtime\platform\error.h" />
+    <ClInclude Include="..\src\runtime\platform\thread.h" />
+    <ClInclude Include="..\src\libraries\minimp3.h" />
+    <ClInclude Include="..\src\libraries\minimp3_ex.h" />
+    <ClInclude Include="..\src\libraries\stb_image.h" />
+    <ClInclude Include="..\src\libraries\stb_image_resize.h" />
+    <ClInclude Include="..\src\libraries\stb_truetype.h" />
+    <ClInclude Include="..\src\libraries\stb_vorbis.h" />
+    <ClInclude Include="..\src\runtime\platform\time.h" />
+    <ClInclude Include="..\src\runtime\private\error.h" />
+    <ClInclude Include="..\src\runtime\private\thread.h" />
+    <ClInclude Include="..\src\runtime\private\time.h" />
+    <ClInclude Include="..\src\runtime\thread.h" />
+    <ClInclude Include="..\src\runtime\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitignore" />
+    <None Include="..\.gitmodules" />
+    <None Include="..\assets\music\carbon_cavern.ogg" />
+    <None Include="..\assets\ost\title\title_theme.ogg" />
+    <None Include="..\assets\ost\title\title_theme_intro.ogg" />
+    <None Include="..\assets\ost\title\title_theme_loop.ogg" />
+    <None Include="..\assets\ost\title\title_theme_ym2612.ogg" />
+    <None Include="..\assets\ost\title\title_theme_ym2612_intro.ogg" />
+    <None Include="..\assets\ost\title\title_theme_ym2612_loop.ogg" />
+    <None Include="..\assets\sfx\menu\select.ogg" />
+    <None Include="..\docs\Doxyfile" />
+    <None Include="..\LICENSE" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\assets\sprites\title\banner.png" />
+    <Image Include="..\assets\sprites\title\bg.png" />
+    <Image Include="..\assets\sprites\title\black.png" />
+    <Image Include="..\assets\sprites\title\clouds.png" />
+    <Image Include="..\assets\sprites\title\c_sega_1993.png" />
+    <Image Include="..\assets\sprites\title\flash.png" />
+    <Image Include="..\assets\sprites\title\lake.png" />
+    <Image Include="..\assets\sprites\title\little_planet.png" />
+    <Image Include="..\assets\sprites\title\medal.png" />
+    <Image Include="..\assets\sprites\title\press_enter.png" />
+    <Image Include="..\assets\sprites\title\press_start.png" />
+    <Image Include="..\assets\sprites\title\sky.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_0.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_1.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_2.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_3.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_4.png" />
+    <Image Include="..\assets\sprites\title\sonic_bust_raised_eyebrow.png" />
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_0.png" />
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_1.png" />
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_2.png" />
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_3.png" />
+    <Image Include="..\assets\sprites\title\tm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Program Icon.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{38b78e2d-647e-4465-8311-32372484643c}</ProjectGuid>
+    <RootNamespace>kleitor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Program</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>Sonic CD (Kleitor)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>Sonic CD (Kleitor)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>.\vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>.\vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>.\vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>.\vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4127;4201;4324;4464;4820;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4127;4201;4324;4464;4820;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <CompileAs>CompileAsC</CompileAs>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4127;4201;4324;4464;4820;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);ws2_32.lib;bthprops.lib;bluetoothapis.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4127;4201;4324;4464;4820;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,56 @@
+/*
+ * the MIT License (MIT)
+ *
+ * Copyright (c) 2023 Trent Summerlin
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * the above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+#ifndef RBTK_ENGINE_PRIVATE_GAME_H_
+#define RBTK_ENGINE_PRIVATE_GAME_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
+
+#include "../game.h"
+
+#include <stdbool.h>
+
+#include "../runtime/common.h"
+
+typedef struct RBTK_GAME {
+    rbtk_game_funs funs;
+    size_t state_count;
+    RBTK_GAME_STATE *states[RBTK_MAX_GAME_STATES];
+    RBTK_GAME_STATE* current_state;
+    long double last_update;
+    bool running;
+    bool stopped;
+} RBTK_GAME;
+
+typedef struct RBTK_GAME_STATE {
+    RBTK_GAME *owner;
+    rbtk_game_state_funs funs;
+} RBTK_GAME_STATE;
+
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
+#endif /* RBTK_ENGINE_PRIVATE_GAME_H_ */

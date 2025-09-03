@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5e8664d9-9a42-4b2e-ad1c-558840cbe745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f7dee0f2-cc40-4662-8553-6f7ad76a0e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Engine">
+      <UniqueIdentifier>{5b88a2d9-f199-4b80-8ef8-5ad8ef2a218b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Engine">
+      <UniqueIdentifier>{a5299517-d534-4829-84c9-77daf6e9b4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sonic the Hedgehog">
+      <UniqueIdentifier>{ca3d4708-ba0a-43c3-b7f0-15f0bac9e039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Libraries">
+      <UniqueIdentifier>{9b943417-d820-4009-af1c-a982aaf397cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sonic the Hedgehog">
+      <UniqueIdentifier>{88d8c459-50d2-4d94-be0b-b81f7ae2b87f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Engine\Platform Specific">
+      <UniqueIdentifier>{dfcbc201-5935-43c1-91e8-477c044a740d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Engine\Private Declarations">
+      <UniqueIdentifier>{bc7f525c-7d02-442d-a3bc-9c3253af568f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Git Files">
+      <UniqueIdentifier>{4eef77b3-b203-4e69-9447-59b36cd670ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Engine\Platform Specific">
+      <UniqueIdentifier>{4a030ce3-6fd6-4db8-89f6-ac2ee5c876c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files">
+      <UniqueIdentifier>{70431132-dd54-4c22-97dc-3ea8db00d1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Sprites">
+      <UniqueIdentifier>{96a727cd-8e82-4a47-8fc5-f60e0c6c4487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Sprites\Title Screen">
+      <UniqueIdentifier>{2be7b9be-eb43-47d6-9cfa-6d75762a340b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Music">
+      <UniqueIdentifier>{4695547d-6e62-4076-9a6d-a017102ff535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Sprites\Title Screen\sonic_finger_wag">
+      <UniqueIdentifier>{1dd55f5c-8c62-48bc-88ad-f37bbdc2919e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Sprites\Title Screen\sonic_bust_appear">
+      <UniqueIdentifier>{a4db8dbe-5942-4a67-b537-630b9a1c5e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\Music\Title Screen">
+      <UniqueIdentifier>{52800a7c-3611-4498-b595-f09b0798c9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\SFX">
+      <UniqueIdentifier>{7c0ecbb2-ddaf-4408-b6bf-39b6b199f50e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset Files\SFX\Menus">
+      <UniqueIdentifier>{f9b3839e-c61d-4fc0-9ac5-3a8451684d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{ae2ecef8-c05e-4287-afcb-091aa3476574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Runtime">
+      <UniqueIdentifier>{96ec2e24-7c25-414c-8f51-a06a379bce72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Runtime">
+      <UniqueIdentifier>{7d4b5cb2-7ecb-4536-8364-21f203f1c3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Runtime\Private Declarations">
+      <UniqueIdentifier>{800bf978-72ee-4a3a-be9a-49f5afd99a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Runtime\Platform Specific">
+      <UniqueIdentifier>{4588e1d9-342e-4153-a48a-cadf6f17eb76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Runtime\Platform Specific">
+      <UniqueIdentifier>{f0161e9d-b6c0-4456-afca-49cd7d836b2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\game.c">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\engine.c">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\audio.c">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\error.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\graphics.c">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\platform\openal_audio.c">
+      <Filter>Source Files\Game Engine\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\platform\opengl_graphics.c">
+      <Filter>Source Files\Game Engine\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\input.c">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\thread.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\time.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\stream.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\asset.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\common.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\platform\glfw_input.c">
+      <Filter>Source Files\Game Engine\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sonic\title_state.c">
+      <Filter>Source Files\Sonic the Hedgehog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\runtime.c">
+      <Filter>Source Files\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sonic\sonic_game.c">
+      <Filter>Source Files\Sonic the Hedgehog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sonic\play_state.c">
+      <Filter>Source Files\Sonic the Hedgehog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sonic\load_state.c">
+      <Filter>Source Files\Sonic the Hedgehog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\engine\platform\pc_engine.c">
+      <Filter>Source Files\Game Engine\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libraries\minimp3.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libraries\stb_image.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libraries\stb_image_resize.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libraries\stb_truetype.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libraries\stb_vorbis.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\platform\pc_asset.c">
+      <Filter>Source Files\Runtime\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\platform\win32_error.c">
+      <Filter>Source Files\Runtime\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\platform\win32_thread.c">
+      <Filter>Source Files\Runtime\Platform Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\runtime\platform\win32_time.c">
+      <Filter>Source Files\Runtime\Platform Specific</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\engine\engine.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\game.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\audio.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\stb_vorbis.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\minimp3.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\minimp3_ex.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\stb_image.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\stb_image_resize.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\stb_truetype.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\error.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\common.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\graphics.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\thread.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\input.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\private\audio.h">
+      <Filter>Header Files\Game Engine\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\private\engine.h">
+      <Filter>Header Files\Game Engine\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\platform\engine.h">
+      <Filter>Header Files\Game Engine\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\platform\game.h">
+      <Filter>Header Files\Game Engine\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\platform\graphics.h">
+      <Filter>Header Files\Game Engine\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\private\graphics.h">
+      <Filter>Header Files\Game Engine\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\time.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\private\game.h">
+      <Filter>Header Files\Game Engine\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\platform\audio.h">
+      <Filter>Header Files\Game Engine\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\stream.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\asset.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\private\input.h">
+      <Filter>Header Files\Game Engine\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\engine\platform\input.h">
+      <Filter>Header Files\Game Engine\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libraries\cglm_no_io.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\runtime.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sonic\sonic_game.h">
+      <Filter>Header Files\Sonic the Hedgehog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\asset.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\asset.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\common.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\common.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\error.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\error.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\stream.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\stream.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\thread.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\thread.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\private\time.h">
+      <Filter>Header Files\Runtime\Private Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\runtime\platform\time.h">
+      <Filter>Header Files\Runtime\Platform Specific</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" />
+    <None Include="..\README.md" />
+    <None Include="..\.gitignore">
+      <Filter>Git Files</Filter>
+    </None>
+    <None Include="..\.gitmodules">
+      <Filter>Git Files</Filter>
+    </None>
+    <None Include="..\assets\music\carbon_cavern.ogg">
+      <Filter>Asset Files\Music</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme_intro.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme_loop.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme_ym2612.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme_ym2612_intro.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\ost\title\title_theme_ym2612_loop.ogg">
+      <Filter>Asset Files\Music\Title Screen</Filter>
+    </None>
+    <None Include="..\assets\sfx\menu\select.ogg">
+      <Filter>Asset Files\SFX\Menus</Filter>
+    </None>
+    <None Include="..\docs\Doxyfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\assets\sprites\title\banner.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\bg.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\clouds.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\lake.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\medal.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\press_start.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sky.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\black.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\c_sega_1993.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\flash.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\little_planet.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\press_enter.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_raised_eyebrow.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\tm.png">
+      <Filter>Asset Files\Sprites\Title Screen</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_0.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_finger_wag</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_1.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_finger_wag</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_2.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_finger_wag</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_finger_wag\sonic_finger_wag_3.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_finger_wag</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_0.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_bust_appear</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_1.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_bust_appear</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_2.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_bust_appear</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_3.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_bust_appear</Filter>
+    </Image>
+    <Image Include="..\assets\sprites\title\sonic_bust_appear\sonic_bust_appear_4.png">
+      <Filter>Asset Files\Sprites\Title Screen\sonic_bust_appear</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Program Icon.rc">
+      <Filter>Asset Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
