@@ -102,7 +102,6 @@
   <ItemGroup>
     <None Include="..\.gitignore" />
     <None Include="..\.gitmodules" />
-    <None Include="..\assets\music\carbon_cavern.ogg" />
     <None Include="..\assets\ost\title\title_theme.ogg" />
     <None Include="..\assets\ost\title\title_theme_intro.ogg" />
     <None Include="..\assets\ost\title\title_theme_loop.ogg" />

@@ -309,9 +309,6 @@
     <None Include="..\.gitmodules">
       <Filter>Git Files</Filter>
     </None>
-    <None Include="..\assets\music\carbon_cavern.ogg">
-      <Filter>Asset Files\Music</Filter>
-    </None>
     <None Include="..\assets\ost\title\title_theme.ogg">
       <Filter>Asset Files\Music\Title Screen</Filter>
     </None>
