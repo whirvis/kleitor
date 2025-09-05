@@ -76,6 +76,14 @@ from the Control Panel. The program is named "Sonic CD (Kleitor)" (rather
 than just "Sonic CD") to prevent confusion with the original that used to
 be available on [Steam.](https://store.steampowered.com/app/200940/)
 
+If you have an issue with the "Installer" project being incompatible,
+make sure your installation of Visual Studio is fully up-to-date and
+that you have installed the [Microsoft Visual Studio Installer Projects
+2022](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects)
+extension. After doing both of those, right click on the project and
+select "Reload Project". From there, the installer should have no more
+issues.
+
 ## 🖨️ Generating the Docs
 This project uses [Doxygen](https://www.doxygen.nl/index.html) for its
 documentation. Before building the docs, you must download
