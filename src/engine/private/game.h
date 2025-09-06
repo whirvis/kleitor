@@ -32,7 +32,7 @@ extern "C" {
 
 #include <stdbool.h>
 
-#include "../runtime/common.h"
+#include "../../runtime/common.h"
 
 typedef struct RBTK_GAME {
     rbtk_game_funs funs;

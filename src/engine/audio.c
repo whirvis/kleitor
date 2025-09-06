@@ -331,7 +331,7 @@ open_vorbis_decoder(rbtk_vorbis_audio_source *vorbis)
              * If the stream says that it didn't read any bytes, we must
              * signal an error and return to avoid a possible softlock.
              */
-            if (read < 0) {
+            if (read <= 0) {
                 free(buf); /* will no longer be used */
                 rbtk_signal_error(RBTK_ERROR_IO,
                     "could not open Ogg Vorbis decoder");

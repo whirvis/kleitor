@@ -170,7 +170,7 @@ rbtk_signal_error_rt(RBTK_ERROR_CODE error,
      * error message has been truncated.
      */
     if (print_result == -1) {
-        size_t truncate_off = RBTK_ERROR_MESSAGE_MAX_LENGTH;
+        long long truncate_off = RBTK_ERROR_MESSAGE_MAX_LENGTH;
         truncate_off -= truncate_msg_len;
         truncate_off -= 1; /* account for NULL terminator */
 

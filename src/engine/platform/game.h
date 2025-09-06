@@ -31,7 +31,7 @@ extern "C" {
 #include "../game.h"
 #include "../private/game.h"
 
-#include "../runtime/common.h"
+#include "../../runtime/common.h"
 
 /* This module currently has no platform-specific declarations. */
 
