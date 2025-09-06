@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(kleitor VERSION 0.0.1)
 
+include(FetchContent)
+
 set(LINUX 0)
 
 if (WIN32)

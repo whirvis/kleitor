@@ -1,6 +1,18 @@
 cmake_minimum_required(VERSION 3.22)
 project(kleitor VERSION 0.0.1)
 
+# The cglm project doesn't have a package on the AUR,
+# so we will have to download it directly from GitHub
+# and build it ourselves. It's a small package, so it
+# doesn't take long luckily.
+if(LINUX)
+    FetchContent_Declare(cglm
+        GIT_REPOSITORY https://github.com/recp/cglm
+        GIT_TAG v0.9.6
+        OVERRIDE_FIND_PACKAGE)
+    FetchContent_MakeAvailable(cglm)
+endif()
+
 add_subdirectory("engine")
 add_subdirectory("sonic")
 
@@ -11,14 +23,13 @@ list(APPEND library_srcs
     "stb_image_resize.c" "stb_image_resize.h"
     "stb_truetype.c" "stb_truetype.h"
     "stb_vorbis.c" "stb_vorbis.h")
+
 list(TRANSFORM library_srcs PREPEND "libraries/")
 
 list(APPEND runtime_srcs
     "asset.c"   "asset.h"
     "common.c"  "common.h"
     "error.c"   "error.h"
-                "engine.h"
-    "main.c"
     "runtime.c" "runtime.h"
     "stream.c"  "stream.h"
     "thread.c"  "thread.h"
@@ -32,7 +43,9 @@ if(LINUX)
         "platform/linux_time.c")
 endif()
 
-list(APPEND program_srcs ${library_srcs} ${runtime_srcs})
+list(TRANSFORM runtime_srcs PREPEND "runtime/")
+
+list(APPEND program_srcs ${library_srcs} ${runtime_srcs} "main.c")
 add_executable(${PROJECT_NAME} ${program_srcs})
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic -Werror)
 
