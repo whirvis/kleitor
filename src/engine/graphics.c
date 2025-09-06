@@ -604,7 +604,7 @@ rbtk_create_ortho_projection(float left, float right, float bottom, float top,
      * here on purpose!
      *
      * Not doing this results in the output being upside down. This only
-     * seems to occur with orthpgraphic matrices when rendering to frame
+     * seems to occur with orthographic matrices when rendering to frame
      * buffers. This does not seem to occur with perspective projections
      * (where multiplying the FOV by -1 would flip it vertically.)
      */
