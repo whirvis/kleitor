@@ -49,12 +49,30 @@ a title screen. However, I may come back to this project in the future.
   option in this section called  "Working Directory". Make sure it is set to
   `$(ProjectDir)..\`.
 
-**Linux, with CMake:** TODO.
+**Linux, with CMake:**
+- This assumes you are running an Arch or Debian based Linux distro.
+  Building the project on Linux should be straightforward. You only need
+  to install the project's dependencies and then run CMake in the project's
+  root directory. After building the project, you should also be able to
+  immediately run the program from the terminal. You can do this with the
+  following commands:
+  ```
+  sudo pacman -S   cmake glew glfw  openal      # Arch
+  sudo apt install cmake glew glfw3 openal-soft # Debian
+
+  git clone git@github.com:whirvis/kleitor.git
+  cd kleitor
+  cmake -S . -B build
+  cmake --build build
+
+  build/src/kleitor
+  ```
 
 **Macintosh, with XCode:** Not supported.
 
-If you still have any issues after following these steps, something may have gone
-wrong with installation. Please open an issue and I will be happy to assist.
+If you still have any issues while or after following these steps,
+something may have gone wrong with installation. Please open an issue
+and I will be happy to assist.
 
 ## 📦 Building the Installer
 
@@ -93,7 +111,7 @@ be as simple as running `doxygen` while in the `docs` directory. You can
 download Doxygen Awesome in one of two ways:
 ```sh
 git clone --recursive                   # download when cloning
-git submodule update --recursive --init # download after cloning
+git submodule update --init --recursive # download after cloning
 ```
 
 ## 🧰️ Technologies
